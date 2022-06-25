@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import testReducer from "./testReducer";
+import { setAllModsReducer } from "../reducers";
 
 const rootReducer = combineReducers({
-  test: testReducer,
+  modsData: setAllModsReducer,
 });
 
 export default rootReducer;
