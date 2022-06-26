@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import { setAllModsReducer } from "../reducers";
+import setAllModsReducer from "./modsReducers";
 
 const rootReducer = combineReducers({
   modsData: setAllModsReducer,

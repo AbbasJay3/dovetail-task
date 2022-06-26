@@ -1,19 +1,14 @@
 import React from "react";
-import { Provider } from "react-redux";
-import rootReducer from "./redux/reducers";
 
-import { configureStore } from "@reduxjs/toolkit";
+import { wrapper } from "../store";
 
-const store = configureStore({
-  reducer: rootReducer,
-});
+import "../pages/modsPage/modsStyles.css";
+import "../pages/modPage/modStyles.css";
+import "./styles.css";
 
 const MyApp = ({ Component, pageProps }) => {
-  return (
-    <Provider store={store}>
-      <Component {...pageProps} />
-    </Provider>
-  );
+  return <Component {...pageProps} />;
 };
 
-export default MyApp;
+// export default MyApp;
+export default wrapper.withRedux(MyApp);

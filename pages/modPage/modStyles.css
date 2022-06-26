@@ -1,0 +1,14 @@
+.mod-heading {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mod-heading__owner-container {
+  display: grid;
+}
+
+.mod-body-image {
+  width: 100%;
+}

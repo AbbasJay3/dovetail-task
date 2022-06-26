@@ -1,0 +1,40 @@
+.mod-card {
+  cursor: pointer;
+  max-width: 480px;
+  border-radius: 0 0 5px 5px;
+  background-color: #f4a328;
+}
+
+.mod-card__image {
+  width: 100%;
+}
+
+.mod-card__container {
+  margin: 10px;
+}
+
+.mod-card__categories {
+  display: flex;
+}
+
+.mod-card__categories_category {
+  margin-right: 4px;
+}
+
+.mod-card__categories_tags {
+  display: flex;
+  overflow: auto;
+}
+
+.mod-card__categories_tags__tag {
+  min-width: fit-content;
+  margin-right: 4px;
+}
+
+.loading-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

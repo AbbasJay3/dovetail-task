@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+  width: 90%;
+  margin: auto;
+  color: white;
+}
+
+.pages-container {
+  align-items: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.pages-container__number {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.mods {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  .mods {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mods {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
